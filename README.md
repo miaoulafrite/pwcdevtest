@@ -38,6 +38,16 @@ Login: pwcdevtest
 Password: pwcdevtest
 ```
 
+### Server access
+
+You can login the VM using:
+```bash
+vagrant ssh
+```
+Then docroot for the site is under ```/var/www/pwcdevtest```
+
+Drush is available.
+
 ## When you're done
 
 Push your work to the repo and notify us.
