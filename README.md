@@ -6,14 +6,14 @@ This test aims to determine candidates' skills when applying for a role.
 
 ## Test details
 
-The test lasts for an hour. It could generally be achieved in much less time for any experienced Drupal developer.
+You can spend up to an hour, but if you finish quicker, let us know.
 
 ## So, what is needed?
 
 We ask you to create a custom module which provides a calculator to all logged-in users under the path ```/calculator```.
 
 1. It must be able to complete the four basic operations: ```+```, ```-```, ```x```, ```/```
-1. There must be no submit button, the operation if fired by changing the operator
+1. There must be no submit button, the operation is fired by changing the operator
 
 ### Note
 > You are intentionally free to use any tool you wish to accomplish this mission.
@@ -23,7 +23,7 @@ We ask you to create a custom module which provides a calculator to all logged-i
 ## Quick start
 
 ```bash
-git clone git@gitlab.com:miaoulafrite-pwc/pwcdevtest.git
+git clone git@github.com:miaoulafrite/pwcdevtest.git
 cd pwcdevtest
 vagrant up
 ```
@@ -32,7 +32,7 @@ vagrant up
 
 You can now visit your site at http://pwcdevtest.local/
 
-Credentials are as follow
+Credentials are as follows
 ```
 Login: pwcdevtest
 Password: pwcdevtest
@@ -40,4 +40,4 @@ Password: pwcdevtest
 
 ## When you're done
 
-Push your work to the repo and notify the person auditioning you.
+Push your work to the repo and notify us.
