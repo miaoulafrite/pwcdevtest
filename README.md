@@ -30,6 +30,12 @@ vagrant up
 
 ### Visit site
 
+Add the following to your hosts
+
+```
+192.168.56.122 pwcdevtest.vm pwcdevtest.local
+```
+
 You can now visit your site at http://pwcdevtest.local/
 
 Credentials are as follows
