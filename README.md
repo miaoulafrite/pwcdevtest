@@ -30,7 +30,7 @@ vagrant up
 
 ### Visit site
 
-You can now visit your site at You can now visit your site at http://pwcdevtest.local/
+You can now visit your site at http://pwcdevtest.local/
 
 Credentials are as follow
 ```
