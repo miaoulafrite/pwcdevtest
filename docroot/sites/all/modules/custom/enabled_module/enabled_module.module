@@ -3,3 +3,54 @@
  * @file
  * enabled_module.module
  */
+
+/**
+ * Implements hook_menu().
+ */
+function enabled_module_menu() {
+  $items = array();
+
+  $items['calculator'] = array(
+    'title' => 'Calculator',
+    'description' => 'Provides a calculator for the four basic operations.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('enabled_module_calculator_form'),
+    'access callback' => 'user_is_logged_in',
+    'file' => 'enabled_module.pages.inc',
+  );
+
+  return $items;
+}
+
+/**
+ * Api function to find out the value of the calculation.
+ *
+ * @param $string
+ * @return float
+ */
+function enabled_module_calculator_calculate_from_string($string) {
+
+  $result = $string;
+
+  $valid = preg_match('/([0-9]+)([\+\-\/\*])([0-9]+)/', $string, $matches);
+
+  if ($valid) {
+    $operator = $matches[2];
+    switch($operator){
+      case '+':
+        $result = $matches[1] + $matches[3];
+        break;
+      case '-':
+        $result = $matches[1] - $matches[3];
+        break;
+      case '*':
+        $result = $matches[1] * $matches[3];
+        break;
+      case '/':
+        $result = $matches[1] / $matches[3];
+        break;
+    }
+  }
+
+  return $result;
+}

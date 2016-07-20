@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * enabled_module.install
+ */
+
+/**
+ * Enables jquery_update for previous installs.
+ */
+function enabled_module_update_7000() {
+  $modules = array(
+    'jquery_update',
+  );
+
+  module_enable($modules);
+}
