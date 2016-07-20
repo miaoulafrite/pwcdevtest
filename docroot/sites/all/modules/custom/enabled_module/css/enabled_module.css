@@ -1,0 +1,7 @@
+#enabled-module-calculator-form #edit-submit {
+    display: none !important;
+}
+
+#enabled-module-calculator-form .form-type-radio {
+    display: inline-block;
+}

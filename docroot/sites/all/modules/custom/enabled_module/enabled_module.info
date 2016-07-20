@@ -2,3 +2,5 @@ name = Enabled module
 description = This module is enabled on the site.
 package = Custom
 core = 7.x
+
+dependecies[] = jquery_update
