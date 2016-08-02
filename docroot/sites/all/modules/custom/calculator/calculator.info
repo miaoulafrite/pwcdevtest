@@ -1,0 +1,4 @@
+name = Calculator module
+description = This module allows logged in users to use a calculator.
+package = Custom
+core = 7.x

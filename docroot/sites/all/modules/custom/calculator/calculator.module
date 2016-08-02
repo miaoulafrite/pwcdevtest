@@ -1,0 +1,27 @@
+<?php
+/**
+ * @file
+ * calculator.module
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function calculator_menu() {
+  $items['calculator'] = array(
+    'title' => 'Calculator',
+    'page callback' => 'calculator_page',
+    'access callback' => '_calculator_access',
+    'file' => 'calculator.pages.inc',
+  );
+
+  return $items;
+}
+
+/**
+ * Access callback for /calculator.
+ */
+function _calculator_access() {
+  // This path is only allowed for authenticated users.
+  return user_is_logged_in();
+}
